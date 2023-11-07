@@ -6,12 +6,14 @@
             </svg>
             <p class = "texto_icono">EcoEats</p>
         </div>
+
         <div class=login>
             <form @submit.prevent="login">
-                <label for="nombre">Usuario </label><input v-model="username" type="text" placeholder="Username" tabindex="1">
+                <label for="nombre">Usuario</label><input v-model="username" type="text" placeholder="Username" tabindex="1">
                 <br>
-                
-                <label for="nombre">Contraseña </label><input v-model="password" type="password" placeholder="Password" tabindex="2">
+                <label for="nombre">Contraseña</label><input v-model="password" type="password" placeholder="Password" tabindex="2">
+                <br>
+                <br>
                 <button type="submit">Login</button>
             </form>
             <div v-if="loginMessage" class="login-message">{{ loginMessage }}</div>
@@ -53,17 +55,17 @@ export default {
 </script>
 
 <style>
-template{
-    overflow:hidden;
+.logPrincipal{
+    overflow: hidden;
+    font-family: 'Fira Sans', sans-serif;
 }
-.logo {
+.logo{
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
     height: 100vh;
-    
-}
+    margin-bottom: 0%;}
 
 .icono_ecoeats{
     width: 60px;
@@ -75,7 +77,6 @@ template{
 .texto_icono{
     margin-top: 45px;
     margin-left: 10px;
-    font-family: 'Fira Sans', sans-serif;
     font-size: 90px;
 }
 
@@ -83,8 +84,17 @@ template{
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    margin-top: 10px;
+    margin-top:-200px;
+}
+.login button[type="submit"] {
+  padding: 10px 20px;
+  margin-left:70px
+}
+.login input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
 }
 </style>
 
