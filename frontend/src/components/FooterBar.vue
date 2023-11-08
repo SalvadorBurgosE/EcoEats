@@ -90,7 +90,7 @@ export default {
 
 .footer a {
   text-decoration: none;
-  color: #0a0a0a;
+  color: #ffffff;
 }
 
 .footer-contact {
