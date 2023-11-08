@@ -1,7 +1,6 @@
 <template>
   <div>
     <NavBar/>
-    <h1>Home</h1>
     <ProductsList/>
     <FooterBar/>
   </div>
