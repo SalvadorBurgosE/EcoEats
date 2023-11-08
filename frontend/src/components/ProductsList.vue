@@ -24,12 +24,12 @@
                     <h2>Pepsi</h2>
                     <p>$300</p>
               </td>
-              <td><img src="https://www.freepnglogos.com/uploads/pepsi-png/pepsi-can-please-stop-hotlinking-pics-page-off-topic-10.png" alt="" width="200px" height="200px"></td>
+              <td><img src="https://www.freepnglogos.com/uploads/pepsi-png/pepsi-can-please-stop-hotlinking-pics-page-off-topic-10.png" alt="" width="150px" height="200px"></td>
             </tr>
         </table>
         <table>
             <tr>
-                <td><img src="https://static.wixstatic.com/media/129c2d_956ff19d6fad43859f24462f491c2d02~mv2.png/v1/fit/w_500,h_500,q_90/file.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://static.wixstatic.com/media/129c2d_956ff19d6fad43859f24462f491c2d02~mv2.png/v1/fit/w_500,h_500,q_90/file.png" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Coca Cola 1L</h2>
                     <p>$350</p>
@@ -38,7 +38,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://www.ferkulum-koeln.de/wp-content/uploads/2020/08/sprite-1L.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://www.ferkulum-koeln.de/wp-content/uploads/2020/08/sprite-1L.png" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Sprite 1l</h2>
                     <p>$250</p>
@@ -47,7 +47,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://images.migrosone.com/sanalmarket/product/08022000/8022000_yan-d36055-1650x1650.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://images.migrosone.com/sanalmarket/product/08022000/8022000_yan-d36055-1650x1650.png" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Fanta</h2>
                     <p>$280</p>
@@ -56,7 +56,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h89/h4a/15687108886558.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://www.totalwine.com/dynamic/x1000,sq/media/sys_master/twmmedia/h89/h4a/15687108886558.png" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Mountain Drew</h2>
                     <p>$320</p>
@@ -65,7 +65,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://atomoconviene.com/atomo-ecommerce/64833-large_default/galletas-dulces-oreo-reg-tripack-23-354-grs-.jpg" alt="" width="225px" height="300px"></td>
+                <td><img src="https://atomoconviene.com/atomo-ecommerce/64833-large_default/galletas-dulces-oreo-reg-tripack-23-354-grs-.jpg" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Oreo</h2>
                     <p>$300</p>
@@ -74,7 +74,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://cdn11.bigcommerce.com/s-3stx4pub31/images/stencil/1280x1280/products/6934/20366/chocolinas-100-g-galletas-dulces-chocolinas-bagley-removebg-preview__52178.1662039755.png?c=2?imbypass=on" alt="" width="225px" height="300px"></td>
+                <td><img src="https://cdn11.bigcommerce.com/s-3stx4pub31/images/stencil/1280x1280/products/6934/20366/chocolinas-100-g-galletas-dulces-chocolinas-bagley-removebg-preview__52178.1662039755.png?c=2?imbypass=on" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Chocolinas</h2>
                     <p>$250</p>
@@ -83,7 +83,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://i0.wp.com/www.argensend.com/wp-content/uploads/2022/02/D_NQ_NP_924267-MLA43802458632_102020-W-removebg-preview.png?fit=477%2C523&ssl=1" alt="" width="225px" height="300px"></td>
+                <td><img src="https://i0.wp.com/www.argensend.com/wp-content/uploads/2022/02/D_NQ_NP_924267-MLA43802458632_102020-W-removebg-preview.png?fit=477%2C523&ssl=1" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Tita</h2>
                     <p>$200</p>
@@ -92,7 +92,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/108/127/products/cerealitasbyb1-78e5364a4c380005d915868224619832-1024-1024.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/108/127/products/cerealitasbyb1-78e5364a4c380005d915868224619832-1024-1024.png" alt="" width="150px" height="200px"></td>
                 <td align="left">
                     <h2>Cerealitas</h2>
                     <p>$280</p>
@@ -199,9 +199,9 @@ section {
 
 table {
     background-color:  #dbf9e3;
-    margin: 50px;
+    margin: 10px;
     width: 25%;
-    border-radius: 40px;
+    border-radius: 10px;
     font-family: 'Fira Sans', sans-serif;
 
 }
