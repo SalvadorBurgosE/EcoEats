@@ -25,13 +25,14 @@ import axios from "axios";
 export default {
   data() {
     return {
+      busqueda: '',
       productList: [],
     };
   },
   methods: {
     fetchProducts() {
       axios
-        .get(`http://localhost:5000/api/products`)
+        .get(`http://localhost:5000/api/products/${this.busqueda}`)
         .then((response) => {
           this.productList = response.data.products;
         })
