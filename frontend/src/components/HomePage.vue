@@ -42,7 +42,6 @@ export default {
 };
 </script>
 
-
 <style>
 .products-list-container {
   display: flex;
