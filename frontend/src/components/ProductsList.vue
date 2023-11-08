@@ -92,7 +92,7 @@
         </table>
         <table>
             <tr>
-                <td><img src="https://images.migrosone.com/sanalmarket/product/08022000/8022000_yan-d36055-1650x1650.png" alt="" width="225px" height="300px"></td>
+                <td><img src="https://d2r9epyceweg5n.cloudfront.net/stores/001/108/127/products/cerealitasbyb1-78e5364a4c380005d915868224619832-1024-1024.png" alt="" width="225px" height="300px"></td>
                 <td align="left">
                     <h2>Cerealitas</h2>
                     <p>$280</p>
