@@ -1,9 +1,6 @@
 <template>
   <div class="carrito-container">
     <div v-for="item in cart" :key="item.product.id" class="carrito-list-item">
-      <div class="carrito-image-container">
-        <img :src="item.product.image" alt="Imagen del producto" class="carrito-image">
-      </div>
       <div class="carrito-text-container">
         <p class="carrito-text">{{ item.product.name }}</p>
         <p class="carrito-text">Cantidad: {{ item.quantity }}</p>
@@ -56,9 +53,10 @@ export default {
 .carrito-container {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  height: 100%;
+  height: 120vh;
+  overflow: hidden;
 
 }
 

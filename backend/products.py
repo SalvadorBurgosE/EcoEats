@@ -4,15 +4,15 @@ products = [
         'name': 'Pepsi', 
         'price':300, 
         'category': 'Bebidas', 
-        'image': "./static/pepsi.png",
+        'image':"https://dcdn.mitiendanube.com/stores/001/611/627/products/1500-regular-011-17aae1c17219bb3b8316179114560247-640-0.png",
         'description': 'Gaseosa de cola'
     },
     {
         'id': 2, 
         'name': 'Coca-Cola', 
         'price': 350, 
-        'category': 'Bebidas', 
-        'image': "./static/coca-cola.jpg",
+        'category': 'Bebidas',
+        'image': "https://inspiravinoteca.com/web/image/product.template/4676/image_1024?unique=5ba446e",
         'description': 'Gaseosa de cola'
     },
     {
@@ -20,7 +20,7 @@ products = [
         'name': 'Sprite', 
         'price': 250, 
         'category': 'Bebidas', 
-        'image': "./static/sprite.jpg",
+        'image': "https://labebidadetusfiestas.com.ar/46004-thickbox_default/sprite-limonada-descartable-1500cc.jpg",
         'description': 'Gaseosa de lima-limón'
     },
     {
@@ -28,7 +28,7 @@ products = [
         'name': 'Fanta', 
         'price': 280, 
         'category': 'Bebidas', 
-        'image': "./static/fanta.png",
+        'image': "https://tusuper.com.ar/image/cache/catalog/P2020/Bebidas/FANTA-NARANJA-1.5lts-800x800.png",
         'description': 'Gaseosa de naranja'
     },
     {
@@ -36,7 +36,7 @@ products = [
         'name': 'Mountain Dew', 
         'price': 320, 
         'category': 'Bebidas', 
-        'image': "./static/mountain-dew.jpg",
+        'image': "https://www.jiomart.com/images/product/original/491349790/mountain-dew-750-ml-product-images-o491349790-p491349790-0-202203150326.jpg?im=Resize=(1000,1000)",
         'description': 'Gaseosa de sabor a lima'
     },
     {
@@ -44,7 +44,7 @@ products = [
         'name': 'Oreo', 
         'price': 300, 
         'category': 'Galletitas', 
-        'image': "./static/oreo.png",
+        'image': "https://dulcilandia.com.ar/par/wp-content/uploads/sites/4/2021/03/10007781-2.png",
         'description': 'Galleta rellena de crema sabor a vainilla'
     },
     {
@@ -52,7 +52,7 @@ products = [
         'name': 'Chocolinas', 
         'price': 250, 
         'category': 'Galletitas', 
-        'image': "./static/chocolinas.jpg",
+        'image': "https://arcorencasa.com/wp-content/uploads/2023/08/20230824-13939.jpg",
         'description': 'Galleta de chocolate'
     },
     {
@@ -60,7 +60,7 @@ products = [
         'name': 'Cerealitas', 
         'price': 280, 
         'category': 'Galletitas', 
-        'image': "./static/cerealitas.jpg",
+        'image': "https://cdn11.bigcommerce.com/s-abmjjefojj/images/stencil/1280x1280/products/1695/11525/cerealitas__87183.1560551272__85392.1618662602.jpg?c=1",
         'description': 'Galleta de avena'
     },
     {
@@ -68,7 +68,7 @@ products = [
         'name': 'Terrabusi', 
         'price': 320, 
         'category': 'Galletitas', 
-        'image': "./static/terrabusi.jpg",
+        'image': "https://cdn11.bigcommerce.com/s-abmjjefojj/images/stencil/1280x1280/products/3464/13873/Terrabusi-Variedad-Chocolate-Argentina_Select-1000x1000__67250.1621722243.jpg?c=1&imbypass=on",
         'description': 'Galleta de chocolate'
     },
     {
@@ -76,7 +76,7 @@ products = [
         'name': 'Pepitos', 
         'price': 300, 
         'category': 'Galletitas', 
-        'image': "./static/pepitos.jpg",
+        'image': "https://www.todohumoonline.com.ar/wp-content/uploads/2020/11/PEPITOS-CLASICOS-118.jpg",
         'description': 'Galleta de chocolate'
     },
     {
@@ -84,7 +84,7 @@ products = [
         'name': 'Cheetos', 
         'price': 300, 
         'category': 'Snacks', 
-        'image': "./static/cheetos.png",
+        'image': "https://carrefourar.vtexassets.com/arquivos/ids/316706/7790310984505_E02.jpg?v=638176822103500000",
         'description': 'Snack de queso'
     },
     {
@@ -92,7 +92,7 @@ products = [
         'name': 'Doritos', 
         'price': 300, 
         'category': 'Snacks', 
-        'image': "./static/doritos.jpg",
+        'image': "https://http2.mlstatic.com/D_NQ_NP_969721-MLA43242725291_082020-O.webp",
         'description': 'Snack de queso'
     },
     {
@@ -100,7 +100,7 @@ products = [
         'name': 'Lays', 
         'price': 300, 
         'category': 'Snacks', 
-        'image': "./static/lays.jpg",
+        'image': "https://d2r9epyceweg5n.cloudfront.net/stores/001/151/835/products/779031000143111-327d3cc4d519e71bfc16270457539499-640-0.jpg",
         'description': 'Snack de papas'
     },
     {
@@ -108,7 +108,7 @@ products = [
         'name': 'Pringles', 
         'price': 300, 
         'category': 'Snacks', 
-        'image': "./static/pringles.jpg",
+        'image': "https://jumboargentina.vtexassets.com/arquivos/ids/766445/Papas-Pringles-Original-X124gs-1-944089.jpg?v=638104306094430000",
         'description': 'Snack de papas'
     }
 ]

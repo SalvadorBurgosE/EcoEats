@@ -2,7 +2,9 @@
   <div class="products-list-container">
     <div v-for="product in productList" :key="product.id" class="product-card">
       <div>
-        <img :src="product.image" :alt="product.name">
+        <div class="product-card-image-container">
+          <img :src="product.image" :alt="product.name" class="product-card-image">
+        </div>
         <p class="product-card-title">{{ product.name }}</p>
         <p class="product-card-category">Categoria: {{ product.category }}</p>
         <p class="product-card-price">Precio: ${{ product.price }}</p>
@@ -57,7 +59,7 @@ export default {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  height: 220px;
+  height: 260px;
   width: 225px;
   border: 1px solid #ccc; 
   border-radius: 8px;
@@ -111,5 +113,16 @@ export default {
   padding: 10px 20px;
   margin-top: 10px;
   text-align: center;
+}
+
+.product-card-image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-image {
+  height: 100px;
+  width: 100px;
 }
 </style>

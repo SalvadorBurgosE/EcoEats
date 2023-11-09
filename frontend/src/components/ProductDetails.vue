@@ -2,7 +2,7 @@
   <div class="product-details-container">
     <div class="product-details-card">
       <div class="image-container">
-        <img src="#" alt="#">
+        <img :src="product.image" :alt="product.name" class="product-details-image">
       </div>
       <div class="text-container">
         <p class="product-text-bold">{{ product.name }}</p>
@@ -172,4 +172,10 @@ button:hover {
   text-align: center;
 }
 
+.product-details-image {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
 </style>
