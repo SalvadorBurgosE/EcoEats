@@ -24,9 +24,9 @@ def login():
 def get_products():
     return jsonify({'products': products})
 
-@app.route('/api/products/image/<path:image>', methods=['GET'])
-def get_product_image(image):
-    return send_from_directory(os.path.join(app.root_path, 'static'), filename=image)
+# @app.route('/api/products/image/<path:image>', methods=['GET'])
+# def get_product_image(image):
+#     return send_from_directory(os.path.join(app.root_path, 'static'), filename=image)
 
     
 @app.route('/api/products/<int:id>', methods=['GET'])
