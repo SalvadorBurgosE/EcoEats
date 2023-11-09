@@ -1,5 +1,6 @@
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, send_from_directory
 from flask_cors import CORS
+import os
 from users import users
 from products import products
 from cart import cart
@@ -23,6 +24,11 @@ def login():
 def get_products():
     return jsonify({'products': products})
 
+@app.route('/api/products/image/<path:image>', methods=['GET'])
+def get_product_image(image):
+    return send_from_directory(os.path.join(app.root_path, 'static'), filename=image)
+
+    
 @app.route('/api/products/<int:id>', methods=['GET'])
 def get_product_id(id):
     productFound = [product for product in products if product['id'] == id]

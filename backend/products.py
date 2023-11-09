@@ -4,7 +4,7 @@ products = [
         'name': 'Pepsi', 
         'price':300, 
         'category': 'Bebidas', 
-        'image': "../frontend/src/assets/pepsi.png",
+        'image': "./static/pepsi.png",
         'description': 'Gaseosa de cola'
     },
     {
@@ -12,7 +12,7 @@ products = [
         'name': 'Coca-Cola', 
         'price': 350, 
         'category': 'Bebidas', 
-        'image': "../frontend/src/assets/coca-cola.jpg",
+        'image': "./static/coca-cola.jpg",
         'description': 'Gaseosa de cola'
     },
     {
@@ -20,7 +20,7 @@ products = [
         'name': 'Sprite', 
         'price': 250, 
         'category': 'Bebidas', 
-        'image': "../frontend/src/assets/sprite.jpg",
+        'image': "./static/sprite.jpg",
         'description': 'Gaseosa de lima-limón'
     },
     {
@@ -28,7 +28,7 @@ products = [
         'name': 'Fanta', 
         'price': 280, 
         'category': 'Bebidas', 
-        'image': "../frontend/src/assets/fanta.png",
+        'image': "./static/fanta.png",
         'description': 'Gaseosa de naranja'
     },
     {
@@ -36,7 +36,7 @@ products = [
         'name': 'Mountain Dew', 
         'price': 320, 
         'category': 'Bebidas', 
-        'image': "../frontend/src/assets/mountain-dew.jpg",
+        'image': "./static/mountain-dew.jpg",
         'description': 'Gaseosa de sabor a lima'
     },
     {
@@ -44,7 +44,7 @@ products = [
         'name': 'Oreo', 
         'price': 300, 
         'category': 'Galletitas', 
-        'image': "../frontend/src/assets/oreo.png",
+        'image': "./static/oreo.png",
         'description': 'Galleta rellena de crema sabor a vainilla'
     },
     {
@@ -52,7 +52,7 @@ products = [
         'name': 'Chocolinas', 
         'price': 250, 
         'category': 'Galletitas', 
-        'image': "../frontend/src/assets/chocolinas.jpg",
+        'image': "./static/chocolinas.jpg",
         'description': 'Galleta de chocolate'
     },
     {
@@ -60,17 +60,55 @@ products = [
         'name': 'Cerealitas', 
         'price': 280, 
         'category': 'Galletitas', 
-        'image': "../frontend/src/assets/cerealitas.jpg",
+        'image': "./static/cerealitas.jpg",
         'description': 'Galleta de avena'
     },
-]
-products = [
-    {'id': 1, 'name': 'Pepsi', 'price':300, 'category': 'Bebidas', 'image': "../frontend/src/assets/pepsi.png"},
-    {'id': 2, 'name': 'Coca-Cola', 'price': 350, 'category': 'Bebidas', 'image': "../frontend/src/assets/coca-cola.jpg"},
-    {'id': 3, 'name': 'Sprite', 'price': 250, 'category': 'Bebidas', 'image': "../frontend/src/assets/sprite.jpg"},
-    {'id': 4, 'name': 'Fanta', 'price': 280, 'category': 'Bebidas', 'image': "../frontend/src/assets/fanta.png"},
-    {'id': 5, 'name': 'Mountain Dew', 'price': 320, 'category': 'Bebidas', 'image': "../frontend/src/assets/mountain-dew.jpg"},
-    {'id': 6, 'name': 'Oreo', 'price': 300, 'category': 'Galletitas', 'image': "../frontend/src/assets/oreo.png"},
-    {'id': 7, 'name': 'Chocolinas', 'price': 250, 'category': 'Galletitas', 'image': "../frontend/src/assets/chocolinas.jpg"},
-    {'id': 8, 'name': 'Cerealitas', 'price': 280, 'category': 'Galletitas', 'image': "../frontend/src/assets/cerealitas.jpg"},
+    {
+        'id': 9, 
+        'name': 'Terrabusi', 
+        'price': 320, 
+        'category': 'Galletitas', 
+        'image': "./static/terrabusi.jpg",
+        'description': 'Galleta de chocolate'
+    },
+    {
+        'id': 10, 
+        'name': 'Pepitos', 
+        'price': 300, 
+        'category': 'Galletitas', 
+        'image': "./static/pepitos.jpg",
+        'description': 'Galleta de chocolate'
+    },
+    {
+        'id': 11, 
+        'name': 'Cheetos', 
+        'price': 300, 
+        'category': 'Snacks', 
+        'image': "./static/cheetos.png",
+        'description': 'Snack de queso'
+    },
+    {
+        'id': 12, 
+        'name': 'Doritos', 
+        'price': 300, 
+        'category': 'Snacks', 
+        'image': "./static/doritos.jpg",
+        'description': 'Snack de queso'
+    },
+    {
+        'id': 13, 
+        'name': 'Lays', 
+        'price': 300, 
+        'category': 'Snacks', 
+        'image': "./static/lays.jpg",
+        'description': 'Snack de papas'
+    },
+    {
+        'id': 14, 
+        'name': 'Pringles', 
+        'price': 300, 
+        'category': 'Snacks', 
+        'image': "./static/pringles.jpg",
+        'description': 'Snack de papas'
+    }
 ]
