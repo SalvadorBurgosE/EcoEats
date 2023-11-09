@@ -5,6 +5,7 @@ from products import products
 from cart import cart
 
 app = Flask(__name__)
+
 CORS(app, resources={r"/api/*": {"origins": "http://localhost:8080"}})
 
 @app.route('/api/login', methods=['POST'])

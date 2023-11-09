@@ -1,11 +1,20 @@
 <template>
-  <div>
-    <p>{{ product.name }}</p>
-    <p>Precio: ${{ product.price }}</p>
-    <p>Stock Disponible: {{ product.stock }}</p>
-    <input v-model="quantity" type="number" min="1"  placeholder="Cantidad">
-    <button @click="addToCart">Agregar al Carrito</button>
-    <div v-if="productMessage" class="">{{ productMessage }}</div>
+  <div class="product-details-container">
+    <div class="product-details-card">
+      <div class="image-container">
+        <img src="#" alt="#">
+      </div>
+      <div class="text-container">
+        <p class="product-text-bold">{{ product.name }}</p>
+        <p class="product-text">Categoria: {{ product.category }}</p>
+        <p class="product-text-bold">Precio: ${{ product.price }}</p>
+      </div>
+      <div class="product-button-container">
+        <input v-model="quantity" type="number" min="1"  placeholder="Cantidad">
+        <button @click="addToCart">Agregar al Carrito</button>
+        <div v-if="productMessage" class="product-message">{{ productMessage }}</div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -85,5 +94,82 @@ export default {
 </script>
 
 <style>
+.product-details-container {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-details-card {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+  padding: 20px; 
+}
+
+.product-text-bold {
+  color: black;
+  font-family: 'Poppins';
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.product-text {
+  margin-top: 0;
+  padding-top: 0;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-button-container {
+  height: 100%;
+}
+
+input {
+
+  width: 40px;
+  margin: 0px 10px 0px 50px;
+  padding: 10px; 
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  font-size: 14px;
+  font-family: 'Poppins';
+}
+
+button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px; 
+  margin-top: 10px; 
+  font-family: 'Poppins';
+}
+
+button:hover {
+  background-color: #333; 
+}
+
+.product-message {
+  color: #6e6e6e;
+  border-radius: 4px;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+  margin-left:50px;
+  text-align: center;
+}
 
 </style>

@@ -1,15 +1,15 @@
 <template>
-  <div>
-    <h1>Home Page</h1>
-    <p>Home page content</p>
-    <div class="products-list-container">
-      <div v-for="product in productList" :key="product.id" class="item-container">
-        <p>{{ product.name }}</p>
-        <p>{{ product.price }}</p>
-        <p>{{ product.stock }}</p>
-        <p>{{ product.category }}</p>
+  <div class="products-list-container">
+    <div v-for="product in productList" :key="product.id" class="product-card">
+      <div>
+        <img :src="product.image" :alt="product.name">
+        <p class="product-card-title">{{ product.name }}</p>
+        <p class="product-card-category">Categoria: {{ product.category }}</p>
+        <p class="product-card-price">Precio: ${{ product.price }}</p>
+      </div>
+      <div class="product-card-button-container">
         <router-link class="link-style" :to="{name:'details', params:{id:product.id}}">
-          <button>Ver producto</button>
+          <button class="product-card-button">Ver producto</button>
         </router-link>
       </div>
     </div>
@@ -44,15 +44,72 @@ export default {
 
 <style>
 .products-list-container {
+  position: relative;
   display: flex;
   flex-flow: row wrap;
-
+  justify-content: flex-start;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
 }
 
-.item-container{
-  width: 200px;
-  border: 1px solid black;
-  margin: 5px;
-  padding: 5px;
+.product-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  height: 220px;
+  width: 225px;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+  padding: 20px; 
+}
+
+.product-card-title {
+  color: black;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.product-card-category {
+  margin-top: 0;
+  padding-top: 0;
+  color: black;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.product-card-price {
+  color: black;
+  font-family: 'Poppins';
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.product-card-button-container {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card-button {
+ 
+  background-color: #1AC84B;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  font-family: 'Poppins';
+  font-size: 14px;
+  font-weight: 600;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-align: center;
 }
 </style>

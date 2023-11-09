@@ -25,5 +25,11 @@ export default {
 </script>
 
 <style>
-
+#app {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+}
 </style>
