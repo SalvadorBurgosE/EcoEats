@@ -1,12 +1,17 @@
 <template>
-  <div>
-    <!-- Contenido del carrito -->
-    <ul>
-      <li v-for="item in cart" :key="item.product.id">
-        {{ item.product.name }} (Cantidad: {{ item.quantity }})
-        <button @click="removeFromCart(item.product.id)">Eliminar</button>
-      </li>
-    </ul>
+  <div class="carrito-container">
+    <div v-for="item in cart" :key="item.product.id" class="carrito-list-item">
+      <div class="carrito-image-container">
+        <img src="#" alt="#" class="carrito-image">
+      </div>
+      <div class="carrito-text-container">
+        <p class="carrito-text">{{ item.product.name }}</p>
+        <p>Cantidad: {{ item.quantity }}</p>
+      </div>
+      <div>
+        <button class="delete-button" @click="removeFromCart(item.product.id)">ELIMINAR</button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -16,17 +21,14 @@ import axios from 'axios';
 export default {
   data() {
     return {
-      cart: [], // Almacena los productos del carrito
+      cart: [],
     };
   },
   methods: {
     removeFromCart(productId) {
-      // Realizar una solicitud DELETE al endpoint para eliminar el producto del carrito
-      axios
-        .delete(`http://localhost:5000/api/cart/remove/${productId}`)
+      axios.delete(`http://localhost:5000/api/cart/remove/${productId}`)
         .then((response) => {
           if (response.status === 200) {
-            // Producto eliminado con éxito, actualiza la vista del carrito
             this.updateCart();
           }
         })
@@ -35,9 +37,7 @@ export default {
         });
     },
     updateCart() {
-      // Realizar una solicitud GET para obtener la última vista actualizada del carrito
-      axios
-        .get('http://localhost:5000/api/cart')
+      axios.get('http://localhost:5000/api/cart')
         .then((response) => {
           this.cart = response.data.cart;
         })
@@ -47,11 +47,44 @@ export default {
     },
   },
   created() {
-    // Cargar la vista inicial del carrito cuando se carga el componente
     this.updateCart();
   },
 };
 </script>
 
 <style>
+.carrito-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.carrito-list-item {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc; 
+  border-radius: 8px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); 
+  margin: 10px; 
+  padding: 20px; 
+  width: 500px;
+}
+
+.delete-button {
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 20px; 
+    margin-top: 10px; 
+    font-family: 'Poppins';
+}
+
 </style>

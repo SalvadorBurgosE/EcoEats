@@ -108,10 +108,10 @@ export default {
 
 .login-form-container form input {
     width: 100%;
-  padding: 10px;
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .login-form-container form input::placeholder {
@@ -142,52 +142,5 @@ export default {
     font-weight: bolder;
 }
 
-
-/* .logPrincipal{
-    
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    font-family: 'Fira Sans', sans-serif;
-}
-.logo{
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: center;
-    height: 100vh;
-    margin-bottom: 0%;}
-
-.icono_ecoeats{
-    width: 60px;
-    margin-top: 50px;
-    margin-left: 80px;
-    position: relative;
-}
-
-.texto_icono{
-    margin-top: 45px;
-    margin-left: 10px;
-    font-size: 90px;
-}
-
-.login{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    margin-top:-200px;
-}
-.login button[type="submit"] {
-  padding: 10px 20px;
-  margin-left:70px
-}
-.login input {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 10px;
-  box-sizing: border-box;
-} */
 </style>
 

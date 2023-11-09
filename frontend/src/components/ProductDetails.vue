@@ -10,8 +10,8 @@
         <p class="product-text-bold">Precio: ${{ product.price }}</p>
       </div>
       <div class="product-button-container">
-        <input v-model="quantity" type="number" min="1"  placeholder="Cantidad">
-        <button @click="addToCart">Agregar al Carrito</button>
+        <input class="product-input" v-model="quantity" type="number" min="1"  placeholder="Cantidad">
+        <button class="product-details-button" @click="addToCart">Agregar al Carrito</button>
         <div v-if="productMessage" class="product-message">{{ productMessage }}</div>
       </div>
     </div>
@@ -135,7 +135,7 @@ export default {
   height: 100%;
 }
 
-input {
+.product-input {
 
   width: 40px;
   margin: 0px 10px 0px 50px;
@@ -146,7 +146,7 @@ input {
   font-family: 'Poppins';
 }
 
-button {
+.product-details-button {
   background-color: #000;
   color: #fff;
   border: none;
